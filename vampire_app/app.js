@@ -5,7 +5,7 @@ const Vampire = require('./models/vampire')
 const vampire = require('Vampire');
 const vampireCollection = require('vampireCollection');
 
-Vampire.collection.insertMany(vampireData, (err, data) => {
+Vampire.collection.insertMany(vampireCollection, (err, data) => {
     console.log("added provided vampire data")
     mongoose.connection.close();
 });
